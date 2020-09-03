@@ -1,7 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
-
-{% block body %}
-<h1>Hola, estamos en DefaultController</h1>
+{% block title %}Home{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/styleIndex.css') }}" type="text/css" rel="stylesheet">
 {% endblock %}
+{% block body %}
+    <div class="nav">
+        <p class="nav-item">Inicio</p>
+        <p class="nav-item">Peliculas</p>
+        <p class="nav-item">Series</p>
+        <p class="nav-item">Registrarse</p>
+        <p class="nav-item">Inicio de Sesión</p>
+    </div>
+{% endblock %}
+
+
